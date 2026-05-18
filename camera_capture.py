@@ -1,11 +1,11 @@
-
-
-print("Project started")
-print("Camera tested successfully")
+#bin/bash
+#Author: Roisin Russell
+#Program Description: Capture and save data
 
 from picamera2 import Picamera2
 import time
 import json
+import requests
 from datetime import datetime
 
 # Start camera
@@ -27,7 +27,14 @@ while True:
     with open("data/data.json", "w") as f:
         json.dump(data, f)
 
-    # Print output 
+    # Send data via HTTP
+    try:
+        requests.post("http://127.0.0.1:5000/data", json=data)
+        print("Data sent successfully")
+    except:
+        print("Failed to send data")
+
+    # Print output
     print(f"Captured image at {data['timestamp']}")
 
     # Wait 10 seconds
