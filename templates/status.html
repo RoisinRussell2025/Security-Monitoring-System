@@ -4,18 +4,6 @@
 
 <head>
     <title>Smart Camera Monitor</title>
-<button onclick="refreshPage()" style="
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: #38bdf8;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-">
-    Refresh Dashboard
-</button>
 
     <style>
         body {
@@ -64,7 +52,23 @@ function refreshPage() {
 
         <hr>
 
-        <h2>Latest Event</h2>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h2>Latest Image</h2>
+
+    <button onclick="refreshPage()" style="
+        padding: 12px 18px;
+        background-color: #38bdf8;
+        border: none;
+        border-radius: 6px;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    ">
+        🔄 Refresh
+    </button>
+
+</div>
 
         {% if last_event %}
             <p><strong>Timestamp:</strong> {{ last_event.timestamp }}</p>
