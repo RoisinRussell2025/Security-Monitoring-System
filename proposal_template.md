@@ -1,5 +1,5 @@
 # Project Name: Security Monitoring System
-#### Student Name: *Roisin Prendergast*   Student ID: *02482126*
+#### Student Name: *Roisin Russell*   Student ID: *02482126*
 
 TODO: Write a short project description.
 This project will implement a security monitoring system using a Raspberry Pi. The aim is to simulate a basic smart monitoring solution that captures images automatically, processes the data locally, and communicates the results across a network. This project is inspired by the Smart Doorbell lab completed during the course but has been adapted into a continuous monitoring system rather than an event-driven doorbell.
