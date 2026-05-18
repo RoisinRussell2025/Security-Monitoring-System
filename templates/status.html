@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Smart Camera Monitor</title>
+<button onclick="refreshPage()" style="
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+">
+    Refresh Dashboard
+</button>
+
+    <style>
+        body {
+            background-image: url('/static/security.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<script>
+function refreshPage() {
+    location.reload();
+}
+</script>
+
+
+
+<body style="
+    background-image: url('/static/security.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+">
+
+
+    <div style="
+    max-width: 700px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+">
+
+
+        <h1>Smart Camera Monitor</h1>
+
+        <hr>
+
+        <h2>Latest Event</h2>
+
+        {% if last_event %}
+            <p><strong>Timestamp:</strong> {{ last_event.timestamp }}</p>
+            <p><strong>Event:</strong> {{ last_event.event }}</p>
+        {% else %}
+            <p>No event received yet.</p>
+        {% endif %}
+
+        <hr>
+
+        <h2>Latest Image</h2>
+        <img src="/static/last_capture.jpg" style="width:100%; border-radius:8px;">
+
+        <hr>
+
+        <h2>API Description</h2>
+
+        <table border="1" cellpadding="8" cellspacing="0" style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Path</th>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/data</td>
+                    <td>POST</td>
+                    <td>Receive camera event data</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>GET</td>
+                    <td>Display dashboard</td>
