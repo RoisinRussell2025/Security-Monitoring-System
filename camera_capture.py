@@ -27,7 +27,7 @@ while True:
     with open("data/data.json", "w") as f:
         json.dump(data, f)
 
-    # Print output (important for assignment)
+    # Print output 
     print(f"Captured image at {data['timestamp']}")
 
     # Wait 10 seconds
