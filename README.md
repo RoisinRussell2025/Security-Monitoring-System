@@ -32,7 +32,13 @@ This project is a Smart Camera Monitoring System developed using a Raspberry Pi,
 4. The server saves the data and updates the dashboard
 5. The dashboard displays the latest image and event
 
----
+## Project Improvements
+While much of my work was based by the lab exercises, 
+I made several improvements and adaptations to meet the specific requirements of this project:
+- Replaced Sense HAT input with automated camera capture
+- Implemented HTTP communication between components
+- Created a styled dashboard with a background image
+- Added user interaction through a refresh button
 
 ## File Structure
  **smart-camera-monitor**
