@@ -1,5 +1,5 @@
 # Project Name: Smart Camera Monitor
-## Student name: *Roisin Prendergast* Student ID: *02482126*
+## Student name: *Roisin Russell* Student ID: *02482126*
 
 ## Project Overview
 This project is a Smart Camera Monitoring System developed using a Raspberry Pi, Python, and Flask. The system captures images automatically, sends structured data over HTTP, and displays the results on a web-based dashboard.
