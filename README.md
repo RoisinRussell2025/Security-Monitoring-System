@@ -1,6 +1,12 @@
 # Project Name: Smart Camera Monitor
 ## Student name: *Roisin Russell* Student ID: *02482126*
 
+## link to Repo##
+https://github.com/RoisinRussell2025/Security-Monitoring-System
+
+## link to youtube video##
+https://youtu.be/MR6t-Kv1R64
+
 ## Project Overview
 This project is a Smart Camera Monitoring System developed using a Raspberry Pi, Python, and Flask. The system captures images automatically, sends structured data over HTTP, and displays the results on a web-based dashboard.
 
@@ -27,6 +33,15 @@ This project is a Smart Camera Monitoring System developed using a Raspberry Pi,
 3. The data is sent to a Flask server via HTTP POST
 4. The server saves the data and updates the dashboard
 5. The dashboard displays the latest image and event
+
+## How to Run
+
+1. Run the Flask server:
+   python app.py
+2. Run the camera script:
+   python camera_capture.py
+3. Open browser:
+   http://RPI local network address:5000
 
 ## Project Improvements
 While much of my work was based by the lab exercises, 
