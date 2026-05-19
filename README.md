@@ -4,8 +4,6 @@
 ## Project Overview
 This project is a Smart Camera Monitoring System developed using a Raspberry Pi, Python, and Flask. The system captures images automatically, sends structured data over HTTP, and displays the results on a web-based dashboard.
 
----
-
 ## Features
 - Captures images using Raspberry Pi camera
 - Generates structured JSON data
@@ -14,8 +12,6 @@ This project is a Smart Camera Monitoring System developed using a Raspberry Pi,
 - Web dashboard displays latest image and event
 - Styled user interface with background image
 - Automatic and manual refresh functionality
-
----
 
 ## Technologies Used
 - Python
