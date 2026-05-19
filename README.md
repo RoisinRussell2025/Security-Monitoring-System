@@ -50,6 +50,7 @@ I made several improvements and adaptations to meet the specific requirements of
 
 ## Resources Used
 notes from course
+previous python certificate knowledge
 labs 9 & 10 
 https://pypi.org/
 google and co-pilot 
